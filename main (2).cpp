@@ -17,7 +17,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 using namespace std;
 using namespace chrono;
 
-// ------------------------ Sorting Algorithms ------------------------
+// Sorting Algorithms 
 
 void bubbleSort(vector<int>& arr) {
     int n = arr.size();
@@ -66,7 +66,7 @@ void quickSort(vector<int>& arr, int low, int high) {
     }
 }
 
-// ------------------------ Data Generation ------------------------
+// Data Generation
 
 vector<int> generateArray(int size, const string& type) {
     vector<int> arr(size);
@@ -79,8 +79,7 @@ vector<int> generateArray(int size, const string& type) {
     return arr;
 }
 
-// ------------------------ Testing ------------------------
-
+// Testing
 void testSortAverage(
     function<void(vector<int>&)> sortFunc,
     const string& name,
@@ -105,7 +104,7 @@ void testSortAverage(
     fout << name << "," << size << "," << type << "," << avgTime << "s\n";
 }
 
-// ------------------------ Main ------------------------
+// Main 
 
 int main() {
     srand(time(0));
@@ -137,3 +136,7 @@ int main() {
     cout << "Experiment finished! Results saved to results.csv" << endl;
     return 0;
 }
+
+
+// kinda massad 
+// 202210677
